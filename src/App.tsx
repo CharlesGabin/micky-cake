@@ -15,6 +15,8 @@ function App() {
           property="og:title"
           content="Micki Cakes - Le plaisir avec grace"
         />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/hero-bg.jpg" />
         <meta name="robots" content="index, follow" />
       </Helmet>
       <Header />
