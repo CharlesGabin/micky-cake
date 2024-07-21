@@ -11,7 +11,6 @@ import {
   Text,
 } from "@chakra-ui/react";
 import Section from "./Section";
-import sectionImage from "../assets/bg-section.jpg";
 import { motion } from "framer-motion";
 
 export default function Product() {

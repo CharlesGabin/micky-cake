@@ -9,7 +9,7 @@ import Lien from "./Lien";
 import { motion } from "framer-motion";
 import { HamburgerIcon } from "@chakra-ui/icons";
 
-export default function Header(props) {
+export default function Header() {
   return (
     <nav className="bg-zinc-50 h-20 fixed top-0 left-0 right-0 z-50 items-center w-full">
       <div className="flex items-center justify-around px-4 py-3 bg-transparent">

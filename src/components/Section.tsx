@@ -1,4 +1,6 @@
-export default function Section(props) {
+import { ComponentProps } from "react";
+
+export default function Section(props: ComponentProps<"section">) {
   return (
     <section
       id={props.id}

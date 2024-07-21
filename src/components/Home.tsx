@@ -1,7 +1,7 @@
 // import Button from "./Button";
 import { Button } from "@chakra-ui/react";
 import Section from "./Section";
-import { easeInOut, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
