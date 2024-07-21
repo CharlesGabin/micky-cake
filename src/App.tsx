@@ -10,7 +10,12 @@ function App() {
     <div>
       <Helmet>
         <title>Micki Cakes - Le plaisir avec grace</title>
-        <link rel="icon" href="/hero-bg.jpg" />
+        <link rel="icon" type="image/jpg" href="/hero-bg.jpg" />
+        <meta
+          property="og:title"
+          content="Micki Cakes - Le plaisir avec grace"
+        />
+        <meta name="robots" content="index, follow" />
       </Helmet>
       <Header />
       <Routes>
