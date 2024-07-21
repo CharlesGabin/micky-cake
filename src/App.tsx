@@ -17,6 +17,7 @@ function App() {
         />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="/hero-bg.jpg" />
+        <meta property="og:url" content="https://micky-cake.vercel.app/" />
         <meta name="robots" content="index, follow" />
       </Helmet>
       <Header />
