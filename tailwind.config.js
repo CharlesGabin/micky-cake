@@ -11,7 +11,7 @@ export default {
         "secondary-color2": "#D2691E",
       },
       backgroundImage: {
-        bgHome: "url('./hero-bg.jpg')",
+        // bgHome: "url('./hero-bg.jpg')",
         bgSection: "url('./src/assets/bgSection2.jpg')",
       },
       fontFamily: {

@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <Section
       id="home"
-      className="flex items-center min-h-screen bg-right bg-no-repeat bg-cover bg-bgHome"
+      className="flex items-center min-h-screen bg-right bg-no-repeat bg-cover bg-[url('./hero-bg.jpg')]"
     >
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
