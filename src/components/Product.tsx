@@ -30,7 +30,14 @@ export default function Product() {
         <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-cols-auto gap-4">
           <Card maxW="auto">
             <CardBody>
-              <Image src="./hero-bg.jpg" alt="image" borderRadius="lg" />
+              <div className="overflow-hidden">
+                <Image
+                  className="hover:scale-125 transition-all "
+                  src="./hero-bg.jpg"
+                  alt="image"
+                  borderRadius="lg"
+                />
+              </div>
               <Stack mt="6" spacing="3">
                 <Heading size="md">Pink Cake</Heading>
                 <Text className="text-md">
