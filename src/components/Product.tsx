@@ -30,11 +30,7 @@ export default function Product() {
         <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-cols-auto gap-4">
           <Card maxW="auto">
             <CardBody>
-              <Image
-                src="./src/assets/hero-bg.jpg"
-                alt="image"
-                borderRadius="lg"
-              />
+              <Image src="./hero-bg.jpg" alt="image" borderRadius="lg" />
               <Stack mt="6" spacing="3">
                 <Heading size="md">Pink Cake</Heading>
                 <Text className="text-md">
@@ -60,11 +56,7 @@ export default function Product() {
           </Card>
           <Card maxW="auto" flex="1 0 1">
             <CardBody>
-              <Image
-                src="./src/assets/hero-bg.jpg"
-                alt="image"
-                borderRadius="lg"
-              />
+              <Image src="./hero-bg.jpg" alt="image" borderRadius="lg" />
               <Stack mt="6" spacing="3">
                 <Heading size="md">Pink Cake</Heading>
                 <Text>
@@ -90,11 +82,7 @@ export default function Product() {
           </Card>
           <Card maxW="auto" flex="1 0 1">
             <CardBody>
-              <Image
-                src="./src/assets/hero-bg.jpg"
-                alt="image"
-                borderRadius="lg"
-              />
+              <Image src="./hero-bg.jpg" alt="image" borderRadius="lg" />
               <Stack mt="6" spacing="3">
                 <Heading size="md">Pink Cake</Heading>
                 <Text>
@@ -120,11 +108,7 @@ export default function Product() {
           </Card>
           <Card maxW="auto" flex="1 0 1">
             <CardBody>
-              <Image
-                src="./src/assets/hero-bg.jpg"
-                alt="image"
-                borderRadius="lg"
-              />
+              <Image src="./hero-bg.jpg" alt="image" borderRadius="lg" />
               <Stack mt="6" spacing="3">
                 <Heading size="md">Pink Cake</Heading>
                 <Text>
