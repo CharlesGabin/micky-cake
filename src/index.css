@@ -7,6 +7,11 @@
 @tailwind utilities;
 
 
+@layer utilities {
+  .bg-heroHome {
+    background-image: url("/hero-bg.jpg");
+  }
+}
 
 :root {
   --rosePale: #F8BBD0,

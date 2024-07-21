@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <Section
       id="home"
-      className="flex items-center min-h-screen bg-right bg-no-repeat bg-cover bg-[url('./hero-bg.jpg')]"
+      className="flex items-center min-h-screen bg-right bg-no-repeat bg-cover bg-heroHome"
     >
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
@@ -29,7 +29,6 @@ export default function Home() {
           Le plaisir avec grace
         </h1>
         <p className="mx-0 mt-4 mb-8 text-xl">Des gateaux qui font sourire</p>
-        {/* <Button>Voir le menu</Button> */}
         <Button variant="solid" colorScheme="pink">
           Voir le menu
         </Button>
