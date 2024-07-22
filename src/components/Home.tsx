@@ -27,7 +27,7 @@ export default function Home() {
         }}
       >
         <h1 className="text-3xl md:text-5xl text-bold font-pacifico">
-          Le plaisir avec grace
+          Le plaisir <br /> avec grace
         </h1>
         <p className="mx-0 mt-4 mb-8 text-base md:text-xl">
           Des gateaux qui font sourire
