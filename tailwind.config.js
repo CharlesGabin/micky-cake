@@ -12,7 +12,7 @@ export default {
       },
       backgroundImage: {
         // bgHome: "url('./hero-bg.jpg')",
-        bgSection: "url('./src/assets/bgSection2.jpg')",
+        bgSection: "url('./src/assets/bg-section.jpg')",
       },
       fontFamily: {
         lato: ["Lato", "sans-serif"],

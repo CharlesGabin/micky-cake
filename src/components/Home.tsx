@@ -7,11 +7,12 @@ export default function Home() {
   return (
     <Section
       id="home"
-      className="flex items-center min-h-screen bg-right bg-no-repeat bg-cover bg-heroHome"
+      className="flex items-center pl-10 md:pl-0 justify-start md:justify-center bg-bgSection bg-no-repeat bg-right bg-cover"
     >
       <motion.div
+        className="flex flex-col justify-start items-start md:justify-center md:items-center"
         initial={{ opacity: 0, scale: 0.5 }}
-        animate={{ x: 50, opacity: 1, scale: 1 }}
+        animate={{ opacity: 1, scale: 1 }}
         exit={{ opacity: 0 }}
         transition={{
           duration: 0.5,
@@ -25,10 +26,12 @@ export default function Home() {
           },
         }}
       >
-        <h1 className="text-5xl text-bold font-pacifico">
+        <h1 className="text-3xl md:text-5xl text-bold font-pacifico">
           Le plaisir avec grace
         </h1>
-        <p className="mx-0 mt-4 mb-8 text-xl">Des gateaux qui font sourire</p>
+        <p className="mx-0 mt-4 mb-8 text-base md:text-xl">
+          Des gateaux qui font sourire
+        </p>
         <Button variant="solid" colorScheme="pink">
           Voir le menu
         </Button>
