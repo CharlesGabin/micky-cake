@@ -8,8 +8,8 @@
 
 
 @layer utilities {
-  .bg-heroHome {
-    background-image: url("/hero-bg.jpg");
+  .bg-Home {
+    background-image: url("/bg-home.jpg");
   }
 }
 

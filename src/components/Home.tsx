@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <Section
       id="home"
-      className="flex items-center pl-10 md:pl-0 justify-start md:justify-center bg-bgSection bg-no-repeat bg-right bg-cover"
+      className="flex items-center pl-10 md:pl-0 justify-start md:justify-center bg-Home bg-no-repeat bg-right bg-cover"
     >
       <motion.div
         className="flex flex-col justify-start items-start md:justify-center md:items-center"
