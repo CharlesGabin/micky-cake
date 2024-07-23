@@ -6,25 +6,29 @@ import { HamburgerIcon } from "@chakra-ui/icons";
 export default function Header() {
   return (
     <nav className="bg-white fixed top-0 left-0 right-0 z-50 items-center w-full">
-      <div className="flex items-center justify-around py-2">
+      <div className="flex items-center md:justify-around justify-between md:px-0 px-4 py-2">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{
-            duration: 0.5,
-            delay: 0.5,
+            duration: 1,
+            delay: 1,
             ease: [0, 0.71, 0.2, 1.01],
-            scale: {
-              type: "spring",
-              damping: 5,
-              stiffness: 100,
-              restDelta: 0.001,
-            },
+
+            // scale: {
+            //   type: "spring",
+            //   damping: 5,
+            //   stiffness: 100,
+            //   restDelta: 0.001,
+            // },
           }}
-          className="flex items-center justify-center text-center hover:scale-110 pointer"
+          className="flex items-center justify-start text-center hover:scale-110 pointer"
         >
-          <Text className="text-2xl font-pacifico text-primary-color2 ">
-            Les gracieux gourmets de Micki
+          <Text className="initial-text text-2xl font-pacifico text-primary-color2 ">
+            Les Gracieux Gourmets de Micki
+          </Text>
+          <Text className="text-2xl font-pacifico text-primary-color2 initials">
+            GGM
           </Text>
         </motion.div>
 

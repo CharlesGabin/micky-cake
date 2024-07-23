@@ -11,23 +11,18 @@ import {
   Text,
 } from "@chakra-ui/react";
 import Section from "./Section";
-import { motion } from "framer-motion";
 
 export default function Product() {
   return (
     <Section
       id="products"
-      className="bg-white-200 w-full mt-18 flex flex-col items-center min-h-screen"
+      className="bg-pink-50 w-full flex flex-col items-center"
     >
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-      >
-        <h1 className="font-pacifico text-4xl text-primary-color2 p-8">
+      <div className="pt-20 px-4 w-[80%]">
+        <h1 className="font-pacifico md:text-4xl text-3xl text-primary-color2 pb-4">
           Nos Produits
         </h1>
-        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-cols-auto gap-4">
+        <div className="w-full items-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-cols-auto gap-4">
           <Card maxW="auto">
             <CardBody>
               <div className="overflow-hidden">
@@ -140,7 +135,7 @@ export default function Product() {
             </CardFooter>
           </Card>
         </div>
-      </motion.div>
+      </div>
     </Section>
   );
 }

@@ -1,38 +1,42 @@
-import { Link, useLocation } from "react-router-dom";
 import clsx from "clsx";
 
 export default function Lien() {
-  const location = useLocation();
   const LI = [
     {
       id: 1,
-      path: "/",
+      path: "#home",
       name: "Accueil",
+      active: true,
     },
     {
       id: 2,
-      path: "/products",
+      path: "#products",
       name: "Produits",
+      active: false,
     },
     {
       id: 3,
-      path: "/#service",
+      path: "#service",
       name: "Services",
+      active: false,
     },
     {
       id: 4,
-      path: "/#autres",
+      path: "#autres",
       name: "Autres",
+      active: false,
     },
     {
       id: 5,
-      path: "/#contact",
+      path: "#contact",
       name: "Contact",
+      active: false,
     },
     {
       id: 6,
-      path: "/#about",
+      path: "#about",
       name: "About us",
+      active: false,
     },
   ];
 
@@ -44,11 +48,11 @@ export default function Lien() {
           "px-2 py-4 text-secondary-color1 hover:text-primary-color2",
           {
             "text-primary-color2 border-b-2 border-primary-color2":
-              location.pathname === `${lien.path}`,
+              lien.active === true,
           }
         )}
       >
-        <Link to={lien.path}>{lien.name}</Link>
+        <a href={lien.path}>{lien.name} </a>
       </li>
     );
   });

@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 
 @layer utilities {
   .bg-Home {
@@ -13,25 +12,79 @@
   }
 }
 
-:root {
+/* :root {
   --rosePale: #F8BBD0,
   --roseVif: #EC407A,
   --white: #ffffff
 
   --grisClair: #f5f5f5,
   --grisFonce: #424242
-}
+} */
 
-* {
-  box-sizing: border-box;
+body {
+  /* box-sizing: border-box; */
   margin: 0;
   padding: 0;
+  /* width: 100vh; */
+  min-height: 100vh;
+  overflow-x: hidden;
   font-family: "Lato", sans-serif;
   text-decoration: none;
   list-style: none;
   outline: none;
   border: none;
   scroll-behavior: smooth;
+}
+
+html,
+* {
+  scroll-behavior: smooth !important;
+}
+
+.header-text span {
+  animation: hiddenText 2s forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes smoothGroup {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateX(10px);
+  }
+}
+
+.initial-text {
+  animation: fadeOut 1s forwards;
+  animation-delay: 3s;
+}
+
+.initials {
+  opacity: 0;
+  animation: fadeIn 1s forwards, smoothGroup 1s ease-in-out forwards;
+  animation-delay: 4s;
 }
 
 /* .btn {
@@ -44,3 +97,19 @@
 section {
   padding: 50px 10%;
 } */
+
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+
+::-webkit-scrollbar * {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f8bbd0 !important;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #f8bbd0 !important;
+}
