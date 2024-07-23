@@ -27,7 +27,7 @@ export default function Header() {
           <Text className="initial-text text-2xl font-pacifico text-primary-color2 ">
             Les Gracieux Gourmets de Micki
           </Text>
-          <Text className="text-2xl font-pacifico text-primary-color2 initials">
+          <Text className="text-2xl font-lato uppercase text-primary-color2 initials">
             GGM
           </Text>
         </motion.div>

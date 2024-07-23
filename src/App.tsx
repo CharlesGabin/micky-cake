@@ -1,7 +1,12 @@
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import Product from "./components/Product";
 import { Helmet } from "react-helmet";
+import Services from "./components/Services";
+import Testimonies from "./components/Testimonies";
+import Blog from "./components/Blog";
 
 function App() {
   return (
@@ -21,6 +26,11 @@ function App() {
       <Header />
       <Home />
       <Product />
+      <Services />
+      <Testimonies />
+      <Blog />
+      <Contact />
+      <Footer />
     </div>
   );
 }
