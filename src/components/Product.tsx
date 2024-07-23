@@ -15,18 +15,15 @@ import { products } from "../data/produits";
 
 export default function Product() {
   return (
-    <Section
-      id="products"
-      className="bg-pink-50 w-full flex flex-col items-center"
-    >
+    <Section id="products" className=" w-full flex flex-col items-center">
       <div className="py-20 px-4 w-[90%]">
-        <h1 className="font-pacifico md:text-4xl text-3xl text-primary-color2 pb-4">
+        <h1 className="font-pacifico md:text-4xl text-3xl underline text-primary-color2 pb-4">
           Nos Produits
         </h1>
         <div className="w-full h-full items-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-cols-auto gap-4">
           {products.map((product, index) => {
             return (
-              <Card maxW="auto" height={500} key={index}>
+              <Card maxW="auto" height={500} key={index} className="shadow-3xl">
                 <CardBody>
                   <div className="overflow-hidden max-w-sm rounded shadow-lg">
                     <Image

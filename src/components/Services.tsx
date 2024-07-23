@@ -1,7 +1,8 @@
-import React from "react";
+// import React from "react";
+import Section from "./Section";
 
 const Services = () => {
-  return <div>Services</div>;
+  return <Section>Services</Section>;
 };
 
 export default Services;

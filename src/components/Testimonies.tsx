@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 
 const Testimonies = () => {
   return <div>Testimonies</div>;
