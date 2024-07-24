@@ -1,4 +1,3 @@
-import React from "react";
 import Testimonies from "./Testimonies";
 import Blog from "./Blog";
 
