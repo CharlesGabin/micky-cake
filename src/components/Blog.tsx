@@ -1,7 +1,9 @@
 // import React from "react";
 
+import Section from "./Section";
+
 const Blog = () => {
-  return <div>Blog</div>;
+  return <Section>Blog</Section>;
 };
 
 export default Blog;

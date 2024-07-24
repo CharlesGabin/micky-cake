@@ -5,10 +5,8 @@ import {
   CardBody,
   CardFooter,
   Divider,
-  Heading,
   Image,
   Stack,
-  Text,
 } from "@chakra-ui/react";
 import Section from "./Section";
 import { products } from "../data/produits";
@@ -16,7 +14,7 @@ import { products } from "../data/produits";
 export default function Product() {
   return (
     <Section id="products" className=" w-full flex flex-col items-center">
-      <div className="py-20 px-4 w-[90%]">
+      <div className="pt-20 px-4 w-[90%] pb-8">
         <h1 className="font-pacifico md:text-4xl text-3xl underline text-primary-color2 pb-4">
           Nos Produits
         </h1>
@@ -34,11 +32,13 @@ export default function Product() {
                     />
                   </div>
                   <Stack mt="6" spacing="3">
-                    <Heading size="md">{product.name}</Heading>
-                    <Text className="text-md">{product.description}</Text>
-                    <Text fontSize="2xl" color="pink.600">
+                    <span className="text-2xl font-lato ">{product.name}</span>
+                    <p className="font-lato text-light">
+                      {product.description}
+                    </p>
+                    <p className="text-2xl font-bold" color="pink.600">
                       {product.price} FCFA
-                    </Text>
+                    </p>
                   </Stack>
                 </CardBody>
                 <Divider />

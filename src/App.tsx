@@ -5,8 +5,7 @@ import Home from "./components/Home";
 import Product from "./components/Product";
 import { Helmet } from "react-helmet";
 import Services from "./components/Services";
-import Testimonies from "./components/Testimonies";
-import Blog from "./components/Blog";
+import Autres from "./components/Autres";
 
 function App() {
   return (
@@ -27,8 +26,7 @@ function App() {
       <Home />
       <Product />
       <Services />
-      <Testimonies />
-      <Blog />
+      <Autres />
       <Contact />
       <Footer />
     </div>
