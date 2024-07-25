@@ -21,12 +21,6 @@ export default function Lien() {
       active: false,
     },
     {
-      id: 4,
-      path: "#autres",
-      name: "Autres",
-      active: false,
-    },
-    {
       id: 5,
       path: "#contact",
       name: "Contact",

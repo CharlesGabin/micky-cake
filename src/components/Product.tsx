@@ -10,14 +10,13 @@ import {
 } from "@chakra-ui/react";
 import Section from "./Section";
 import { products } from "../data/produits";
+import Title from "./Title";
 
 export default function Product() {
   return (
     <Section id="products" className=" w-full flex flex-col items-center">
-      <div className="pt-20 px-4 w-[90%] pb-8">
-        <h1 className="font-pacifico md:text-4xl text-3xl underline text-primary-color2 pb-4">
-          Nos Produits
-        </h1>
+      <Title title="Nos Produits" />
+      <div className="pt-4 px-4 w-[90%] pb-8">
         <div className="w-full h-full items-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-cols-auto gap-4">
           {products.map((product, index) => {
             return (

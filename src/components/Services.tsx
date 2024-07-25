@@ -1,18 +1,15 @@
 import { services } from "../data/produits";
 import Section from "./Section";
+import Title from "./Title";
 
 const Services = () => {
   return (
     <Section
       id="service"
-      className=" w-full flex flex-col items-center bg-purple-100"
+      className="w-full flex flex-col items-center bg-purple-100"
     >
-      <div className="pt-20 px-4 w-[90%]">
-        <h1 className="font-pacifico md:text-4xl text-3xl underline text-primary-color2 pb-4">
-          Nos Services
-        </h1>
-      </div>
-      <div className="w-[90%] grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-4 md:gap-0 gap-8 items-center justify-between mt-[50px]">
+      <Title title="Nos Services" />
+      <div className="w-[90%] grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-4 md:gap-0 gap-8 items-center justify-between pt-4">
         {services.map((service) => {
           return (
             <div
@@ -34,24 +31,6 @@ const Services = () => {
           );
         })}
       </div>
-      {/* <div className="flex flex-col md:flex-row flex-grow w-full">
-        <div className="pt-5 px-4 w-full flex-grow bg-purple-100">
-          <img
-            width="100"
-            height="100"
-            src="https://img.icons8.com/plasticine/100/pie.png"
-            alt="pie"
-          />
-          <h1 className="font-pacifico md:text-3xl text-2xl underline text-primary-color2 pb-4">
-            Patisserie
-          </h1>
-        </div>
-        <div className="pt-5 px-4 w-full flex-grow bg-blue-100 ">
-          <h1 className="font-pacifico md:text-3xl text-2xl underline text-primary-color2 pb-4">
-            Restauration
-          </h1>
-        </div>
-      </div> */}
     </Section>
   );
 };
