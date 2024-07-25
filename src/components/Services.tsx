@@ -12,7 +12,7 @@ const Services = () => {
           Nos Services
         </h1>
       </div>
-      <div className="w-[90%] grid grid-cols-1 md:grid-cols-4 md:gap-0 gap-8 items-center justify-between mt-[50px]">
+      <div className="w-[90%] grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-4 md:gap-0 gap-8 items-center justify-between mt-[50px]">
         {services.map((service) => {
           return (
             <div
