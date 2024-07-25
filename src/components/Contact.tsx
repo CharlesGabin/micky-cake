@@ -29,7 +29,7 @@ const Contact = () => {
         <form onSubmit={formik.handleSubmit}>
           <VStack spacing={4}>
             <FormControl>
-              <FormLabel></FormLabel>
+              <FormLabel htmlFor="name">Nom</FormLabel>
               <Input />
               <FormErrorMessage></FormErrorMessage>
             </FormControl>

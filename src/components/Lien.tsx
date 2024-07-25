@@ -22,14 +22,14 @@ export default function Lien() {
     },
     {
       id: 5,
-      path: "#contact",
-      name: "Contact",
+      path: "#about",
+      name: "About us",
       active: false,
     },
     {
       id: 6,
-      path: "#about",
-      name: "About us",
+      path: "#contact",
+      name: "Contact",
       active: false,
     },
   ];
