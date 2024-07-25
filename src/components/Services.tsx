@@ -9,7 +9,7 @@ const Services = () => {
       className="w-full flex flex-col items-center bg-purple-100"
     >
       <Title title="Nos Services" />
-      <div className="w-[90%] grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-4 md:gap-0 gap-8 items-center justify-between pt-4">
+      <div className="w-[90%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:gap-0 gap-8 items-center justify-between pt-4">
         {services.map((service) => {
           return (
             <div
