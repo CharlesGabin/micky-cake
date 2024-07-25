@@ -1,6 +1,7 @@
 import { services } from "../data/produits";
 import Section from "./Section";
 import Title from "./Title";
+import { motion } from "framer-motion";
 
 const Services = () => {
   return (
@@ -9,7 +10,13 @@ const Services = () => {
       className="w-full flex flex-col items-center bg-purple-100"
     >
       <Title title="Nos Services" />
-      <div className="w-[90%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:gap-0 gap-8 items-center justify-between pt-4">
+      <motion.div
+        className="w-[90%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:gap-0 gap-8 items-center justify-between pt-4"
+        initial={{ opacity: 0, x: 50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.6, delay: 0.8 }}
+        viewport={{ once: false }}
+      >
         {services.map((service) => {
           return (
             <div
@@ -30,7 +37,7 @@ const Services = () => {
             </div>
           );
         })}
-      </div>
+      </motion.div>
     </Section>
   );
 };

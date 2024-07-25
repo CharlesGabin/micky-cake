@@ -11,12 +11,19 @@ import {
 import Section from "./Section";
 import { products } from "../data/produits";
 import Title from "./Title";
+import { motion } from "framer-motion";
 
 export default function Product() {
   return (
     <Section id="products" className=" w-full flex flex-col items-center">
       <Title title="Nos Produits" />
-      <div className="pt-4 px-4 w-[90%] pb-8">
+      <motion.div
+        className="pt-4 px-4 w-[90%] pb-8"
+        initial={{ opacity: 0, x: 50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.6, delay: 0.8 }}
+        viewport={{ once: false }}
+      >
         <div className="w-full h-full items-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-cols-auto gap-4">
           {products.map((product, index) => {
             return (
@@ -57,7 +64,7 @@ export default function Product() {
             );
           })}
         </div>
-      </div>
+      </motion.div>
     </Section>
   );
 }

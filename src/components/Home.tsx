@@ -9,16 +9,16 @@ export default function Home() {
     >
       <div className="flex initials flex-col justify-start items-start md:justify-center md:items-center">
         <h1 className="text-3xl hidden md:block md:text-5xl text-bold font-pacifico">
-          Le plaisir avec grace
+          Les Gracieux Gourmets de Micki
         </h1>
-        <h1 className="text-3xl block md:hidden md:text-5xl text-bold font-pacifico">
-          Le plaisir <br /> avec grace
+        <h1 className="text-3xl block md:hidden md:text-5xl text-bold font-pacifico tracking-tight">
+          Les Gracieux Gourmets <br /> de Micki
         </h1>
         <p className="mx-0 mt-4 mb-8 text-base md:text-xl">
-          Des gateaux qui font sourire
+          Le plaisir avec grace
         </p>
         <Button variant="solid" colorScheme="pink">
-          Voir le menu
+          En Savoir Plus
         </Button>
       </div>
     </Section>

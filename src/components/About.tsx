@@ -4,6 +4,7 @@ import image from "../assets/images/about-image.png";
 import { Image } from "@chakra-ui/react";
 import Section from "./Section";
 import Title from "./Title";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
@@ -11,10 +12,22 @@ const About = () => {
       <Title title="À Propos De Nous ! " />
       <div className="w-full px-4 flex-grow flex flex-col items-center justify-center">
         <div className="w-[90%] flex md:flex-row flex-col gap-4 items-center justify-center">
-          <div className="flex flex-1 w-full rounded-lg shadow-xl h-96 bg-white">
+          <motion.div
+            className="flex flex-1 w-full rounded-lg shadow-xl md:h-96 h-full bg-white"
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.8 }}
+            viewport={{ once: false }}
+          >
             <Image src={image} alt="about" className="w-full object-contain" />
-          </div>
-          <div className="flex flex-col flex-1 h-96 gap-8 w-full rounded-lg bg-purple-100 p-8 shadow-xl">
+          </motion.div>
+          <motion.div
+            className="flex flex-col flex-1 md:h-96 h-full md:gap-8 gap-4 w-full rounded-lg bg-purple-100 p-8 shadow-xl"
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.8 }}
+            viewport={{ once: false }}
+          >
             <span className="font-pacifico md:text-3xl text-2xl text-secondary-color2">
               Les Gracieux Gourmets de Micki
             </span>
@@ -34,7 +47,7 @@ const About = () => {
               <p className="text-primary-color2">10:00 AM - 6:00 PM</p>
             </div>
             <div className="flex justify-around gap-4"></div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </Section>
