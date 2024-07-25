@@ -31,8 +31,10 @@ export default function Product() {
                     />
                   </div>
                   <Stack mt="6" spacing="3">
-                    <span className="text-2xl font-lato ">{product.name}</span>
-                    <p className="font-lato text-light">
+                    <span className="text-2xl font-lato font-bold">
+                      {product.name}
+                    </span>
+                    <p className="font-lato font-light">
                       {product.description}
                     </p>
                     <p className="text-2xl font-bold" color="pink.600">
