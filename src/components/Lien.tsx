@@ -1,34 +1,45 @@
 import clsx from "clsx";
+import { useEffect } from "react";
 
-export default function Lien() {
+export default function Lien({ setIsMobileMenuOpen }) {
+  const handleScroll = (event: MouseEvent, targetId: string) => {
+    event.preventDefault();
+    const target = document.getElementById(targetId);
+    if (target) {
+      const offset = target.offsetTop - 80;
+      window.scrollTo({ top: offset, behavior: "smooth" });
+    }
+    setIsMobileMenuOpen(false);
+  };
+
   const LI = [
     {
       id: 1,
-      path: "#home",
+      path: "home",
       name: "Accueil",
       active: true,
     },
     {
       id: 2,
-      path: "#products",
+      path: "products",
       name: "Produits",
       active: false,
     },
     {
       id: 3,
-      path: "#service",
+      path: "service",
       name: "Services",
       active: false,
     },
     {
       id: 5,
-      path: "#about",
+      path: "about",
       name: "About us",
       active: false,
     },
     {
       id: 6,
-      path: "#contact",
+      path: "contact",
       name: "Contact",
       active: false,
     },
@@ -37,7 +48,6 @@ export default function Lien() {
   const tabLI = LI.map((lien) => {
     return (
       <li
-        key={lien.id}
         className={clsx(
           "px-2 py-4 text-secondary-color1 hover:text-primary-color2",
           {
@@ -46,7 +56,13 @@ export default function Lien() {
           }
         )}
       >
-        <a href={lien.path}>{lien.name} </a>
+        <a
+          key={lien.id}
+          href={`#${lien.path}`}
+          onClick={(event) => handleScroll(event, lien.path)}
+        >
+          {lien.name}{" "}
+        </a>
       </li>
     );
   });

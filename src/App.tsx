@@ -9,7 +9,7 @@ import About from "./components/About";
 
 function App() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <main className="flex flex-col min-h-screen antialiased">
       <Helmet>
         <title>Micki Cakes - Le plaisir avec grace</title>
         <link rel="icon" type="image/jpg" href="/hero-bg.jpg" />
@@ -29,7 +29,7 @@ function App() {
       <About />
       <Contact />
       <Footer />
-    </div>
+    </main>
   );
 }
 
