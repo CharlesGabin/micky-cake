@@ -1,8 +1,12 @@
 import clsx from "clsx";
-import { useEffect } from "react";
 
-export default function Lien({ setIsMobileMenuOpen }) {
-  const handleScroll = (event: MouseEvent, targetId: string) => {
+const Lien: React.FC<{
+  setIsMobileMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}> = ({ setIsMobileMenuOpen }) => {
+  const handleScroll = (
+    event: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
+    targetId: string
+  ) => {
     event.preventDefault();
     const target = document.getElementById(targetId);
     if (target) {
@@ -68,4 +72,6 @@ export default function Lien({ setIsMobileMenuOpen }) {
   });
 
   return <ul className="flex flex-col md:flex-row">{tabLI}</ul>;
-}
+};
+
+export default Lien;

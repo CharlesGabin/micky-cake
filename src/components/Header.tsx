@@ -9,9 +9,9 @@ import {
 import Lien from "./Lien";
 import { motion } from "framer-motion";
 import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
-import { useState } from "react";
+import React, { useState } from "react";
 
-export default function Header() {
+const Header: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -63,4 +63,6 @@ export default function Header() {
       </div>
     </nav>
   );
-}
+};
+
+export default Header;
