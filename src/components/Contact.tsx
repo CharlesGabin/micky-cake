@@ -10,6 +10,7 @@ import {
 } from "@chakra-ui/react";
 import Section from "./Section";
 import Title from "./Title";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   const formik = useFormik({
@@ -28,7 +29,15 @@ const Contact = () => {
       className="w-full flex flex-col gap-8 items-center bg-purple-100 pb-12"
     >
       <Title title="Contactez-Nous !" />
-      <div className="w-[90%] px-4 items-start  flex-grow justify-start flex flex-col border-2 border-purple-500 rounded-lg">
+      <motion.div
+        className="w-[90%] px-4 items-start  flex-grow justify-start flex flex-col border-2 border-purple-500 rounded-lg"
+        initial={{ opacity: 0, scale: 0 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 0.6,
+          delay: 0.6,
+        }}
+      >
         <form
           onSubmit={formik.handleSubmit}
           className="w-full flex flex-col items-start "
@@ -51,7 +60,7 @@ const Contact = () => {
             </FormControl>
           </VStack>
         </form>
-      </div>
+      </motion.div>
     </Section>
   );
 };

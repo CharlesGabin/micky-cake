@@ -22,10 +22,8 @@
 } */
 
 body {
-  /* box-sizing: border-box; */
   margin: 0;
   padding: 0;
-  /* width: 100vh; */
   min-height: 100vh;
   overflow-x: hidden;
   font-family: "Lato", sans-serif;

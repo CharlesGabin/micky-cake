@@ -1,10 +1,10 @@
 import {
   Button,
-  ButtonGroup,
+  // ButtonGroup,
   Card,
   CardBody,
-  CardFooter,
-  Divider,
+  // CardFooter,
+  // Divider,
   Image,
   Stack,
 } from "@chakra-ui/react";
@@ -27,7 +27,7 @@ export default function Product() {
         <div className="w-full h-full items-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-cols-auto gap-4">
           {products.map((product, index) => {
             return (
-              <Card maxW="auto" height={500} key={index} className="shadow-3xl">
+              <Card maxW="auto" height={400} key={index} className="shadow-3xl">
                 <CardBody>
                   <div className="overflow-hidden max-w-sm rounded shadow-lg">
                     <Image
@@ -49,21 +49,26 @@ export default function Product() {
                     </p>
                   </Stack>
                 </CardBody>
-                <Divider />
+                {/* <Divider />
                 <CardFooter>
                   <ButtonGroup spacing="2">
                     <Button variant="solid" colorScheme="pink">
                       Buy Now
                     </Button>
-                    <Button variant="ghost" colorScheme="pink">
-                      Add to cart
-                    </Button>
                   </ButtonGroup>
-                </CardFooter>
+                </CardFooter> */}
               </Card>
             );
           })}
         </div>
+        <p className="font-lato font-ligth text-lg mt-4 flex flex-col items-center justify-center gap-4">
+          Voulez-vous en savoir plus ?
+          <Button variant="solid" colorScheme="pink">
+            <a href="#contact" className="font-lato font-light">
+              Me Contacter
+            </a>
+          </Button>{" "}
+        </p>
       </motion.div>
     </Section>
   );

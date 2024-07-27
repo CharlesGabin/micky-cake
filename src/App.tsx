@@ -6,10 +6,13 @@ import Product from "./components/Product";
 import { Helmet } from "react-helmet";
 import Services from "./components/Services";
 import About from "./components/About";
+import { SocialIcon } from "react-social-icons";
 
 function App() {
+  const waNumber = "23796877668";
+  const WA_URL = "https://api.whatsapp.com/send?phone=";
   return (
-    <main className="flex flex-col min-h-screen antialiased">
+    <main className="relative flex flex-col min-h-screen antialiased">
       <Helmet>
         <title>Micki Cakes - Le plaisir avec grace</title>
         <link rel="icon" type="image/jpg" href="/hero-bg.jpg" />
@@ -22,6 +25,16 @@ function App() {
         <meta property="og:url" content="https://micky-cake.vercel.app/" />
         <meta name="robots" content="index, follow" />
       </Helmet>
+      <div className="sticky top-[75%] left-0 z-50 pl-4 ">
+        <a href={"https://wa.me/" + waNumber} target="_blank">
+          <SocialIcon network="whatsapp"></SocialIcon>
+        </a>
+      </div>
+      <div className="sticky top-[85%] left-0 z-50 pl-4 ">
+        <a href={WA_URL + waNumber} target="_blank">
+          <SocialIcon network="whatsapp"></SocialIcon>
+        </a>
+      </div>
       <Header />
       <Home />
       <Product />

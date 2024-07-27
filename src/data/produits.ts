@@ -134,3 +134,36 @@ export const services = [
       "Services complets pour les mariages, y compris les gâteaux, la restauration et la coordination de l'événement.",
   },
 ];
+
+export const LI = [
+  {
+    id: 1,
+    path: "home",
+    name: "Accueil",
+    active: true,
+  },
+  {
+    id: 2,
+    path: "products",
+    name: "Produits",
+    active: false,
+  },
+  {
+    id: 3,
+    path: "service",
+    name: "Services",
+    active: false,
+  },
+  {
+    id: 5,
+    path: "about",
+    name: "About us",
+    active: false,
+  },
+  {
+    id: 6,
+    path: "contact",
+    name: "Contact",
+    active: false,
+  },
+];

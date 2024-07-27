@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const Title = (props: { title: string }) => {
   return (
     <motion.div
-      className="pt-20 px-4 w-[90%]"
+      className="pt-4 px-4 w-[90%]"
       initial={{ opacity: 0, x: -50 }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5, delay: 0.5 }}

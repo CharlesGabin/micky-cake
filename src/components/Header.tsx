@@ -10,12 +10,26 @@ import Lien from "./Lien";
 import { motion } from "framer-motion";
 import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 import React, { useState } from "react";
+import { LI } from "../data/produits";
 
 const Header: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const handleScroll = (
+    event: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
+    targetId: string
+  ) => {
+    event.preventDefault();
+    const target = document.getElementById(targetId);
+    if (target) {
+      const offset = target.offsetTop - 80;
+      window.scrollTo({ top: offset, behavior: "smooth" });
+    }
+    setIsMobileMenuOpen(false);
   };
 
   return (
@@ -53,10 +67,24 @@ const Header: React.FC = () => {
               _hover="bg-primary-color1"
               className="hover:bg-white"
             />
-            <MenuList className="hover:bg-white">
-              <MenuItem className="hover:bg-white">
-                <Lien setIsMobileMenuOpen={setIsMobileMenuOpen} />
-              </MenuItem>
+            <MenuList className="">
+              {LI.map((lien) => {
+                return (
+                  <MenuItem
+                    key={lien.id}
+                    _active={"pink"}
+                    className="hover:border-b-2 hover:border-primary-color2 hover:bg-white bg-white"
+                  >
+                    <a
+                      key={lien.id}
+                      href={`#${lien.path}`}
+                      onClick={(event) => handleScroll(event, lien.path)}
+                    >
+                      {lien.name}{" "}
+                    </a>
+                  </MenuItem>
+                );
+              })}
             </MenuList>
           </Menu>
         </div>

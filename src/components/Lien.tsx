@@ -1,11 +1,13 @@
 import clsx from "clsx";
+import { LI } from "../data/produits";
 
 const Lien: React.FC<{
   setIsMobileMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }> = ({ setIsMobileMenuOpen }) => {
   const handleScroll = (
     event: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
-    targetId: string
+    targetId: string,
+    active: boolean
   ) => {
     event.preventDefault();
     const target = document.getElementById(targetId);
@@ -14,56 +16,25 @@ const Lien: React.FC<{
       window.scrollTo({ top: offset, behavior: "smooth" });
     }
     setIsMobileMenuOpen(false);
+    if (active) {
+      active = !active;
+    }
   };
-
-  const LI = [
-    {
-      id: 1,
-      path: "home",
-      name: "Accueil",
-      active: true,
-    },
-    {
-      id: 2,
-      path: "products",
-      name: "Produits",
-      active: false,
-    },
-    {
-      id: 3,
-      path: "service",
-      name: "Services",
-      active: false,
-    },
-    {
-      id: 5,
-      path: "about",
-      name: "About us",
-      active: false,
-    },
-    {
-      id: 6,
-      path: "contact",
-      name: "Contact",
-      active: false,
-    },
-  ];
 
   const tabLI = LI.map((lien) => {
     return (
-      <li
-        className={clsx(
-          "px-2 py-4 text-secondary-color1 hover:text-primary-color2",
-          {
-            "text-primary-color2 border-b-2 border-primary-color2":
-              lien.active === true,
-          }
-        )}
-      >
+      <li>
         <a
           key={lien.id}
           href={`#${lien.path}`}
-          onClick={(event) => handleScroll(event, lien.path)}
+          onClick={(event) => handleScroll(event, lien.path, lien.active)}
+          className={clsx(
+            "px-2 py-4 text-secondary-color1 hover:text-primary-color2",
+            {
+              "text-primary-color2 border-b-2 border-primary-color2":
+                lien.active === true,
+            }
+          )}
         >
           {lien.name}{" "}
         </a>
