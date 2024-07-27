@@ -22,7 +22,7 @@ const About = () => {
             <Image src={image} alt="about" className="w-full object-contain" />
           </motion.div>
           <motion.div
-            className="flex flex-col flex-1  md:gap-8 gap-4 w-full rounded-lg bg-purple-100 p-8 shadow-xl"
+            className="flex flex-col flex-1  md:gap-8 gap-4 w-full rounded-lg bg-purple-100 p-4 shadow-xl"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.8 }}
@@ -32,12 +32,11 @@ const About = () => {
               Les Gracieux Gourmets de Micki
             </span>
             <p className="font-lato font-light text-md">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-              labore accusantium blanditiis eveniet, quibusdam voluptatum non
-              voluptatibus iste veritatis voluptate commodi quam inventore
-              suscipit quo laborum amet aliquid. Earum nesciunt ipsum corporis
-              dolorem ullam iste fugit cumque omnis eos non deleniti similique
-              quam, aperiam hic enim recusandae mollitia error. Voluptatibus!
+              est une entreprise de pâtisserie qui se distingue par ses produits
+              raffinés et personalisés; son service attentionné et son
+              engagement envers la qualité. Si vous recherchez des desserts
+              délicieux et uniques pour votre prochain évènement, n'hésitez pas
+              à nous contacter !
             </p>
             <span className="font-pacifico font-light md:text-2xl text-xl text-secondary-color2">
               Opening Hours:
