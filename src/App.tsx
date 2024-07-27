@@ -25,11 +25,6 @@ function App() {
         <meta property="og:url" content="https://micky-cake.vercel.app/" />
         <meta name="robots" content="index, follow" />
       </Helmet>
-      <div className="sticky top-[75%] left-0 z-50 pl-4 ">
-        <a href={"https://wa.me/" + waNumber} target="_blank">
-          <SocialIcon network="whatsapp"></SocialIcon>
-        </a>
-      </div>
       <div className="sticky top-[85%] left-0 z-50 pl-4 ">
         <a href={WA_URL + waNumber} target="_blank">
           <SocialIcon network="whatsapp"></SocialIcon>
