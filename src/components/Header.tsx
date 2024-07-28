@@ -46,7 +46,14 @@ const Header: React.FC = () => {
           className="flex items-center justify-start text-center hover:scale-110 pointer"
         >
           <Text className="text-2xl font-lato uppercase text-primary-color2">
-            GGM
+            <span className="bg-pink-950 px-2 py-2 text-white font-dancingScript rounded-full">
+              GG
+            </span>
+            <span className="bg-pink-500 px-1 py-1 text-white font-dancingScript rounded-full">
+              {" "}
+              M
+            </span>
+            <span className="">icki</span>
           </Text>
         </motion.div>
 

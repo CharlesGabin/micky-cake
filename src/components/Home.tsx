@@ -8,7 +8,7 @@ export default function Home() {
       className="flex items-center pl-4 md:pl-0 justify-start md:justify-center bg-Home bg-no-repeat bg-right bg-cover"
     >
       <motion.div
-        className="flex flex-col justify-start items-start md:justify-center md:items-center"
+        className="flex flex-col text-pink-950 justify-start items-start md:justify-center md:items-center"
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{

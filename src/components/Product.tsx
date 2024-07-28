@@ -41,7 +41,7 @@ export default function Product() {
                     <span className="text-2xl font-lato font-bold">
                       {product.name}
                     </span>
-                    <p className="font-lato font-light">
+                    <p className="font-lato font-light text-pink-950">
                       {product.description}
                     </p>
                     <p className="text-2xl font-bold" color="pink.600">
