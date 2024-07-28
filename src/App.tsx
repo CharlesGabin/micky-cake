@@ -8,7 +8,7 @@ import About from "./components/About";
 import { SocialIcon } from "react-social-icons";
 
 function App() {
-  const waNumber = "23796877668";
+  const waNumber = "23790507469";
   const WA_URL = "https://api.whatsapp.com/send?phone=";
   return (
     <main className="relative flex flex-col min-h-screen antialiased">
