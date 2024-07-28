@@ -20,19 +20,19 @@ const Footer = () => {
   return (
     <div
       id="contact"
-      className="flex md:flex-row flex-grow md:justify-between flex-col md:gap-4 gap-8  h-auto items-center bg-white-100 text-pink-950 px-4 py-4"
+      className="flex lg:flex-row flex-grow lg:justify-between flex-col lg:gap-4 gap-8  h-auto items-center bg-white-100 text-pink-950 px-4 py-4"
     >
       <div>
-        <span className="font-pacifico ms:text-md text-lg">
+        <span className="font-pacifico lg:text-md text-lg">
           Les Gracieux Gourmets de Micki
         </span>
       </div>
-      <div className="flex md:flex-row flex-col md:gap-8 gap-8">
-        <div className="font-lato flex md:flex-row flex-col items-center gap-4">
+      <div className="flex lg:flex-row flex-col lg:gap-8 gap-8">
+        <div className="font-lato flex lg:flex-row flex-col items-center gap-4">
           <div>
             <h3>Menu</h3>
           </div>
-          <div className="flex gap-4 md:border-l-4 md:border-t-0 border-t-4 border-pink-950 pl-4">
+          <div className="flex gap-4 lg:border-l-4 lg:border-t-0 border-t-4 border-pink-950 pl-4">
             {LI.map((lien) => {
               console.log(lien.active);
               return (
@@ -57,11 +57,11 @@ const Footer = () => {
             })}
           </div>
         </div>
-        <div className="font-lato flex md:flex-row flex-col items-center gap-4">
+        <div className="font-lato flex lg:flex-row flex-col items-center gap-4">
           <div>
             <h3>Contact</h3>
           </div>
-          <div className="flex flex-col md:border-l-4 md:border-t-0 border-t-4 border-pink-950 pl-4">
+          <div className="flex flex-col lg:border-l-4 lg:border-t-0 border-t-4 border-pink-950 pl-4">
             <span className="font-lato font-light">
               +237 690507469 | +237 653058622
             </span>
@@ -70,7 +70,7 @@ const Footer = () => {
             </span>
           </div>
         </div>
-        <div className="font-lato flex md:flex-row flex-col items-center gap-4">
+        <div className="font-lato flex lg:flex-row flex-col items-center gap-4">
           <div className="flex items-center gap-2">
             <LocationSharp
               color={"#470000"}
@@ -80,7 +80,7 @@ const Footer = () => {
             />
             <h3>Adresse</h3>
           </div>
-          <div className="flex flex-col md:border-l-4 md:border-t-0 border-t-4 border-pink-950 pl-4">
+          <div className="flex flex-col lg:border-l-4 lg:border-t-0 border-t-4 border-pink-950 pl-4">
             <span className="font-lato font-light">
               Yaounde, Center Region, Cameroon
             </span>
