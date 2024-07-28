@@ -39,10 +39,10 @@ const About = () => {
               à nous contacter !
             </p>
             <span className="font-pacifico font-light md:text-2xl text-xl text-secondary-color2">
-              Opening Hours:
+              Heures d'ouverture:
             </span>
             <div className="flex justify-between md:w-[50%] w-full font-lato">
-              <p>Sunday - Friday:</p>
+              <p>Dimanche - Vendredi :</p>
               <p className="text-primary-color2">10:00 AM - 6:00 PM</p>
             </div>
             <div className="flex justify-around gap-4"></div>

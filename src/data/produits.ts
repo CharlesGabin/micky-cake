@@ -140,7 +140,7 @@ export const LI = [
     id: 1,
     path: "home",
     name: "Accueil",
-    active: true,
+    active: false,
   },
   {
     id: 2,
@@ -157,7 +157,7 @@ export const LI = [
   {
     id: 5,
     path: "about",
-    name: "About us",
+    name: "A propos",
     active: false,
   },
   {

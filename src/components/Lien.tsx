@@ -16,23 +16,29 @@ const Lien: React.FC<{
       window.scrollTo({ top: offset, behavior: "smooth" });
     }
     setIsMobileMenuOpen(false);
-    if (active) {
+    if (active || !active) {
       active = !active;
     }
+    console.log(active);
   };
 
   const tabLI = LI.map((lien) => {
+    console.log(lien.active);
+
     return (
-      <li>
+      <li key={lien.id}>
         <a
-          key={lien.id}
           href={`#${lien.path}`}
           onClick={(event) => handleScroll(event, lien.path, lien.active)}
           className={clsx(
-            "px-2 py-4 text-secondary-color1 hover:text-primary-color2",
+            "px-2 py-4 text-pink-950 hover:text-primary-color2",
             {
-              "text-primary-color2 border-b-2 border-primary-color2":
+              "text-primary-color2 border-b-1 border-primary-color2":
                 lien.active === true,
+            },
+            {
+              "bg-pink-500 hover:bg-pink-700 hover:text-white text-white font-lato font-light py-1 px-2 rounded-2xl cursor-pointer":
+                lien.name === "Contact",
             }
           )}
         >

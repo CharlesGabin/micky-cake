@@ -1,4 +1,3 @@
-import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Home from "./components/Home";
@@ -25,7 +24,7 @@ function App() {
         <meta property="og:url" content="https://micky-cake.vercel.app/" />
         <meta name="robots" content="index, follow" />
       </Helmet>
-      <div className="sticky top-[85%] left-0 z-50 pl-4 ">
+      <div className="sticky top-[80%] left-0 z-50 pl-4 ">
         <a href={WA_URL + waNumber} target="_blank">
           <SocialIcon network="whatsapp"></SocialIcon>
         </a>
@@ -35,7 +34,6 @@ function App() {
       <Product />
       <Services />
       <About />
-      <Contact />
       <Footer />
     </main>
   );

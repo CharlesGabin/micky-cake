@@ -11,6 +11,7 @@ import { motion } from "framer-motion";
 import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 import React, { useState } from "react";
 import { LI } from "../data/produits";
+import clsx from "clsx";
 
 const Header: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -44,9 +45,6 @@ const Header: React.FC = () => {
           }}
           className="flex items-center justify-start text-center hover:scale-110 pointer"
         >
-          {/* <Text className="text-2xl font-pacifico text-primary-color2 ">
-            Les Gracieux Gourmets de Micki
-          </Text> */}
           <Text className="text-2xl font-lato uppercase text-primary-color2">
             GGM
           </Text>
@@ -73,7 +71,17 @@ const Header: React.FC = () => {
                   <MenuItem
                     key={lien.id}
                     _active={"pink"}
-                    className="hover:border-b-2 hover:border-primary-color2 hover:bg-white bg-white"
+                    className={clsx(
+                      "px-2 py-4 text-secondary-color1 hover:text-primary-color2",
+                      {
+                        "text-primary-color2 border-b-2 border-primary-color2":
+                          lien.active === true,
+                      },
+                      {
+                        "bg-pink-500 hover:bg-pink-700 hover:text-white text-white font-lato font-light py-1 px-2 rounded-2xl cursor-pointer":
+                          lien.name === "Contact",
+                      }
+                    )}
                   >
                     <a
                       key={lien.id}

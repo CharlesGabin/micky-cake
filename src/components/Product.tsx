@@ -49,14 +49,6 @@ export default function Product() {
                     </p>
                   </Stack>
                 </CardBody>
-                {/* <Divider />
-                <CardFooter>
-                  <ButtonGroup spacing="2">
-                    <Button variant="solid" colorScheme="pink">
-                      Buy Now
-                    </Button>
-                  </ButtonGroup>
-                </CardFooter> */}
               </Card>
             );
           })}

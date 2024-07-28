@@ -1,4 +1,3 @@
-import { Button } from "@chakra-ui/react";
 import Section from "./Section";
 import { motion } from "framer-motion";
 
@@ -18,17 +17,17 @@ export default function Home() {
         }}
       >
         <h1 className="text-3xl hidden md:block md:text-5xl text-bold font-pacifico">
-          Les Gracieux Gourmets de Micki
+          Les Grâcieux Gourmets de Micki
         </h1>
-        <h1 className="text-3xl block md:hidden md:text-5xl text-bold font-pacifico tracking-tight">
-          Les Gracieux Gourmets <br /> de Micki
+        <h1 className="text-2xl block md:hidden md:text-5xl text-bold font-pacifico tracking-tight">
+          Les Grâcieux Gourmets <br /> de Micki
         </h1>
         <p className="mx-0 mt-4 mb-8 text-base md:text-xl">
-          Le plaisir avec grace
+          Le plaisir avec grâce
         </p>
-        <Button variant="solid" colorScheme="pink">
-          En Savoir Plus
-        </Button>
+        <button className="bg-pink-500 hover:bg-pink-700 text-white font-lato font-light py-2 px-4 rounded">
+          <a href="#service">En Savoir Plus</a>
+        </button>
       </motion.div>
     </Section>
   );
