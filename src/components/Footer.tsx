@@ -3,9 +3,7 @@ import { LI } from "../data/produits";
 import clsx from "clsx";
 import { LocationSharp } from "react-ionicons";
 
-const Footer: React.FC<{
-  setIsMobileMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
-}> = ({ setIsMobileMenuOpen }) => {
+const Footer = () => {
   const handleScroll = (
     event: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
     targetId: string,
@@ -16,10 +14,6 @@ const Footer: React.FC<{
     if (target) {
       const offset = target.offsetTop - 80;
       window.scrollTo({ top: offset, behavior: "smooth" });
-    }
-    setIsMobileMenuOpen(false);
-    if (active || !active) {
-      active = !active;
     }
     console.log(active);
   };
