@@ -39,7 +39,7 @@ const About = () => {
               à nous contacter !
             </p>
             <span className="font-pacifico font-light md:text-2xl text-xl text-secondary-color2">
-              Heures d'ouverture:
+              Service disponible du :
             </span>
             <div className="flex justify-between md:w-[50%] w-full font-lato">
               <p>Dimanche - Vendredi :</p>

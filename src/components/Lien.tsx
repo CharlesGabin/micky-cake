@@ -31,15 +31,15 @@ const Lien: React.FC<{
           href={`#${lien.path}`}
           onClick={(event) => handleScroll(event, lien.path, lien.active)}
           className={clsx(
-            "px-2 py-4 text-pink-950 hover:text-primary-color2",
+            "px-2 py-4 text-pink-950 hover:text-primary-color2 font-lato",
             {
               "text-primary-color2 border-b-1 border-primary-color2":
                 lien.active === true,
-            },
-            {
-              "bg-pink-500 hover:bg-pink-700 hover:text-white text-white font-lato font-light py-1 px-2 rounded-2xl cursor-pointer":
-                lien.name === "Contact",
             }
+            // {
+            //   "bg-pink-500 hover:bg-pink-700 hover:text-white text-white my-4 font-lato py-1 px-2 rounded-2xl cursor-pointer":
+            //     lien.name === "Contact",
+            // }
           )}
         >
           {lien.name}{" "}

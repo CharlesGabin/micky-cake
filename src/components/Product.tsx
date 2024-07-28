@@ -27,7 +27,12 @@ export default function Product() {
         <div className="w-full h-full items-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-cols-auto gap-4">
           {products.map((product, index) => {
             return (
-              <Card maxW="auto" height={400} key={index} className="shadow-3xl">
+              <Card
+                // maxW="auto"
+                // height={400}
+                key={index}
+                className="shadow-3xl"
+              >
                 <CardBody>
                   <div className="overflow-hidden max-w-sm rounded shadow-lg">
                     <Image
@@ -53,14 +58,20 @@ export default function Product() {
             );
           })}
         </div>
-        <p className="font-lato font-ligth text-lg mt-4 flex flex-col items-center justify-center gap-4">
+        <motion.p
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.8 }}
+          viewport={{ once: false }}
+          className="font-lato font-ligth text-lg mt-4 flex flex-col items-center justify-center gap-4"
+        >
           Voulez-vous en savoir plus ?
           <Button variant="solid" colorScheme="pink">
             <a href="#contact" className="font-lato font-light">
-              Me Contacter
+              Nous Contacter
             </a>
           </Button>{" "}
-        </p>
+        </motion.p>
       </motion.div>
     </Section>
   );

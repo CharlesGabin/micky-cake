@@ -86,48 +86,27 @@ export const services = [
   },
   {
     id: 4,
-    icon_url: "https://img.icons8.com/fluency/48/000000/calendar.png",
-    service_name: "Organisation d'événements",
-    description:
-      "Des services professionnels d'organisation d'événements pour rendre vos occasions spéciales mémorables.",
-  },
-  {
-    id: 5,
-    icon_url: "https://img.icons8.com/fluency/48/000000/chef-hat.png",
-    service_name: "Cours de cuisine",
-    description:
-      "Cours de cuisine pratiques pour les particuliers et les groupes, couvrant une variété de cuisines.",
-  },
-  {
-    id: 6,
     icon_url: "https://img.icons8.com/fluency/48/000000/delivery-scooter.png",
     service_name: "Livraison",
     description:
       "Service de livraison pratique de nos produits de boulangerie et de restauration directement à votre porte.",
   },
   {
-    id: 7,
+    id: 5,
     icon_url: "https://img.icons8.com/fluency/48/000000/dining-room.png",
     service_name: "Restauration privée",
     description:
       "Des expériences exclusives de restauration privée avec des menus personnalisés et un service exceptionnel.",
   },
   {
-    id: 8,
-    icon_url: "https://img.icons8.com/fluency/48/000000/coffee.png",
-    service_name: "Service de café",
-    description:
-      "Un service de café et de thé de qualité supérieure est disponible pour les événements et les commandes de restauration.",
-  },
-  {
-    id: 9,
+    id: 6,
     icon_url: "https://img.icons8.com/fluency/48/000000/dessert.png",
     service_name: "Table à dessert",
     description:
       "Des tables de desserts joliment disposées avec une variété de douceurs pour vos événements.",
   },
   {
-    id: 10,
+    id: 7,
     icon_url: "https://img.icons8.com/fluency/48/000000/wedding-cake.png",
     service_name: "Services de mariage",
     description:

@@ -13,7 +13,7 @@ function App() {
   return (
     <main className="relative flex flex-col min-h-screen antialiased">
       <Helmet></Helmet>
-      <div className="sticky top-[80%] left-0 z-50 pl-4 ">
+      <div className="sticky top-[90%] left-0 z-50 pl-4 ">
         <a href={WA_URL + waNumber} target="_blank">
           <SocialIcon network="whatsapp"></SocialIcon>
         </a>

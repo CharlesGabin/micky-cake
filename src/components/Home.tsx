@@ -22,7 +22,7 @@ export default function Home() {
         <h1 className="text-2xl block md:hidden md:text-5xl text-bold font-pacifico tracking-tight">
           Les Grâcieux Gourmets <br /> de Micki
         </h1>
-        <p className="mx-0 mt-4 mb-8 text-base md:text-xl">
+        <p className="mx-0 mt-4 mb-8 text-base md:text-xl font-lato">
           Le plaisir avec grâce
         </p>
         <button className="bg-pink-500 hover:bg-pink-700 text-white font-lato font-light py-2 px-4 rounded">
