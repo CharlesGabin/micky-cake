@@ -61,7 +61,7 @@ const Header: React.FC = () => {
           <Lien setIsMobileMenuOpen={setIsMobileMenuOpen} />
         </div>
         <div className="md:hidden">
-          <Menu closeOnBlur={true} closeOnSelect={true}>
+          <Menu closeOnBlur={false} closeOnSelect={true}>
             <MenuButton
               onClick={toggleMobileMenu}
               as={IconButton}
@@ -69,25 +69,26 @@ const Header: React.FC = () => {
               icon={isMobileMenuOpen ? <CloseIcon /> : <HamburgerIcon />}
               variant="outline"
               borderColor="secondary-color1"
-              _hover="bg-primary-color1"
+              style={{ background: "white" }}
               className="hover:bg-white"
             />
             <MenuList className="">
               {LI.map((lien) => {
                 return (
                   <MenuItem
+                    style={{ background: "white" }}
                     key={lien.id}
                     _active={"pink"}
                     className={clsx(
-                      "px-2 py-4 text-secondary-color1 hover:text-primary-color2",
+                      "px-2 py-4 text-secondary-color1 hover:text-primary-color2 font-lato font-light",
                       {
                         "text-primary-color2 border-b-2 border-primary-color2":
                           lien.active === true,
-                      },
-                      {
-                        "bg-pink-500 hover:bg-pink-700 hover:text-white text-white font-lato font-light py-1 px-2 rounded-2xl cursor-pointer":
-                          lien.name === "Contact",
                       }
+                      // {
+                      //   "bg-pink-500 hover:bg-pink-700 hover:text-white text-white font-lato font-light py-1 px-2 rounded-2xl cursor-pointer":
+                      //     lien.name === "Contact",
+                      // }
                     )}
                   >
                     <a
